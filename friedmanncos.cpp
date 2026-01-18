@@ -3,7 +3,7 @@
 #include <fstream>
 #include <cmath>
 
-// Calcule da/dt à partir de l’équation de Friedmann (univers FLRW)
+// calcul de da/dt via l’équation de Friedmann (univers FLRW)
 double scaleFactorDerivative(double scaleFactor,
                              double hubbleConst,
                              double omegaMatter,
@@ -22,7 +22,7 @@ double scaleFactorDerivative(double scaleFactor,
 
 int main()
 {
-    // Fichier de sortie : temps et facteur d’échelle
+    // Fichier de sortie ; temps et facteur d’échelle
     std::ofstream output("scale_factor.dat");
 
     if (!output) return 1;
